@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void Ho3s(int a, int b) {
+    if (a == b)
+        cout << a << "=" << b << endl;
+    else if (a > b)
+        cout << a << ">" << b << endl;
+    else
+        cout << a << "<" << b << endl;
+}
+
+int main(int argc, char *argv[]) {
+    auto const a = stoi(argv[1]);
+    for (int i = 2; i < argc; i++) {
+        auto b = stoi(argv[i]);
+        Ho3s(a, b);
+    }
+    return 0;
+}
+
