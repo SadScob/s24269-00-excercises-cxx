@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+void Ho3starz(int a) {
+    for (int i = 0; i < a; i++) {
+        cout << "*";
+    }
+    cout << endl;
+}
+
+int main(int argc, char *argv[]) {
+    int a = stoi(argv[1]);
+    if (a < 4)
+        cout << "The number must be greater than 3\n";
+    else {
+        Ho3starz(a);
+        for (int i = 1; i < a; i++) {
+            for (int o = 0; o < a; o++) {
+                if (o == 0 || o == a - 1)
+                    cout << "*";
+                else
+                    cout<< " ";
+            }
+            cout << endl;
+        }
+        Ho3starz(a);
+    }
+    return 0;
+}
