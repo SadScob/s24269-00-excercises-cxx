@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+    int a = stoi(argv[1]);
+    for (int i = 0; i <= a; i++) {
+        for (int o = 0; o < i; o++) {
+            cout << "*";
+        }
+        cout << endl;
+
+    }
+    return 0;
+}
