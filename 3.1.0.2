@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+auto iota(int a[], int n, int start) -> void {
+    for (int i = 0; i < n; i++) {
+        a[i] = start;
+        start++;
+    }
+}
+
+
+auto main (int argc, char** argv) -> int {
+    int tab[100];
+    int n =4;
+    int start = 5;
+    iota(tab, n, start);
+
+    for (int i = 0; i < n; ++i) {
+        cout << tab[i] << endl;
+    }
+    return 0;
+}
