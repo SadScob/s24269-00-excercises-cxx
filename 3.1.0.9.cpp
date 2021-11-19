@@ -1,7 +1,6 @@
 #include <iostream>
 
-auto swap(int* a, int* b) -> void
-{
+auto swap(int* a, int* b) -> void{
     int t = *a;
     *a = *b;
     *b = t;
